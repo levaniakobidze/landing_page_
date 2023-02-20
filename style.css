@@ -1,0 +1,161 @@
+html,
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+main {
+  background-image: url(./assets/hero.png);
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navbar_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.menu li {
+  list-style: none;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #333333;
+  cursor: pointer;
+  position: relative;
+}
+.menu li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20%;
+  width: 0;
+  height: 2px;
+  background-color: #7b61ff;
+  transition: 0.3s;
+}
+.menu li:hover::before {
+  width: 100% !important;
+}
+.logo {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+  letter-spacing: 0.06em;
+  /* White */
+  color: #7b61ff;
+}
+.login {
+  padding: 16px 40px;
+  color: #fff;
+  background-color: #7b61ff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-weight: bold;
+  width: 270px;
+}
+.register {
+  padding: 16px 40px;
+  border: 1px solid #7b61ff;
+  color: #7b61ff;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.register:hover {
+  background-color: #7b61ff;
+  color: #fff;
+}
+/* ///// Hero - container  ///// */
+
+.hero_container {
+  width: 100%;
+  max-width: 770px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  gap: 40px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+  margin-left: 50px;
+}
+.title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  /* or 133% */
+  /* White */
+  color: #ffffff;
+}
+.text {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+  /* White */
+  color: #ffffff;
+  width: 100%;
+  max-width: 470px;
+}
+.circle_image {
+  position: absolute;
+  height: 500px;
+  top: -23%;
+  left: -15%;
+  z-index: 0;
+  opacity: 0.3;
+}
+.cards {
+  width: 100%;
+  height: 800px;
+  background-color: #fff;
+  padding: 160px 0;
+}
+.cards_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  width: 370px;
+  height: 480px;
+  background-color: red;
+}
